@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  :root {
+    --oscuro: #1f2124;
+    --rojo: #F00814;
+    --celeste: #51d1f6;
+    --dorado: gold;
+    --coral: rgb(202, 58, 14);
+  }
+
+  html {
+	scroll-behavior: smooth;
+	scroll-padding: 100px;
+}
+
+body{
+    width: 100%;
+    background-color: var(--oscuro)
+}
+
+.poke-search-section {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--dorado);
+}
+
+.poke-search-section img {
+    width: 60px;
+}
+
+#span-explain {
+   font-size: 1.3rem;
+   color: var(--rojo);
+   font-weight: bold;
+}
+
+.flex-margin {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-poke button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 0;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--dorado);
+    color: var(--oscuro)
+}
+
+.search-poke button:hover {
+    background-color: rgb(136, 238, 47);
+    transition: 300ms;
+}
+
+.search-poke {
+    gap: 20px;
+}
+
+.input-search-poke {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.input-search-poke input {
+    border: 0;
+    outline: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--oscuro)
+}
+
+.input-search-poke ::placeholder {
+    color: var(--oscuro);
+    font-weight: 500;
+}
+
+.input-search-poke img {
+    width: 20px;
+}
+
+.poke-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poke-lists {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.poke-lists li {
+    background: white;
+    border: 3px solid var(--dorado);
+    color: var(--oscuro);
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    border-radius: 20px 0px;
+    user-select: none;
+    width: 725px;
+    height: 500px, auto;
+}
+
+.poke-lists h2 {
+ font-size: 2.5rem;
+ color: var(--coral);
+}
+
+.poke-lists h3 {
+    font-size: 2rem;
+}
+
+.poke-lists h4 {
+    font-size: 1.6rem;
+    color: var(--coral);  
+}
+
+.poke-lists h5 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#pokes img {
+    width: 300px;
+}
+
+.li-error h2{
+    font-size: 1.5rem;
+}
+
+.footer-container p {
+    color: var(--dorado);
+    font-weight: bold;
+}
+
+.footer-container b {
+    color: var(--rojo);
+}
+
+.footer-container b:hover {
+    color: var(--dorado);
+}
+
+@media (max-width: 768px){
+    .pizzas-lists li {
+        width: 100%;
+        width: 725px, auto;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    #span-explain {
+        font-size: 0.9rem;
+        text-align: center;
+        justify-content: center;
+     }
+    .poke-search-section {
+        font-size: 1.5rem;
+        
+    }
+    
+    .poke-search-section img {
+        width: 50px;
+    }
+    
+    .flex-margin {
+        margin-top: 20px;
+    }
+    
+    .search-poke {
+        gap: 1.2rem;
+    }
+
+    .search-poke button {
+        font-size: 1.1rem;
+    }
+
+    .input-search-poke{
+        font-size: 1.1rem;
+    }
+
+    .input-search-poke input {
+        font-size: 1.1rem;
+    }
+
+    .input-search-poke img {
+        width: 1.1rem;
+    }
+
+    .poke-lists {
+        margin-top: 30px;
+        width: 320px;
+    }
+    
+    .poke-lists li {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+
+    .poke-lists h2 {
+        font-size: 1.5rem;
+    }
+       
+    .poke-lists h3 {
+        font-size: 1.3rem;
+    }
+       
+    .poke-lists h4 {
+        font-size: 1.3rem;  
+    }
+       
+    .poke-lists h5 {
+        font-size: 1rem;
+    }
+
+    #pokes img {
+        width: 280px;
+    }
+
+    .li-error h2{
+        font-size: 1rem;
+    }
+}
